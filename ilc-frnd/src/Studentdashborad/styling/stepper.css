@@ -1,0 +1,184 @@
+.wizard-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #babae8; 
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+ 
+}
+
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 2rem 0 4rem;
+  z-index: 1;  
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #848181;
+  z-index: -1; 
+}
+
+.progress {
+  background-color: #066514; 
+  width: calc((100% / 9) * (var(--step) - 1)); 
+  transition: width 0.3s;
+}
+
+.progress-step {
+  width: 1.8875rem;
+  height: 1.8875rem;
+  background-color: #7d0684;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2; 
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  display: flex;
+  flex-direction: column;
+  bottom: -25px; 
+  left: 50%;
+  transform: translateX(-50%);
+   white-space: nowrap;  
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #7d0684;
+}
+
+.progress-step-active {
+  background-color: #03532c; 
+  color: white; 
+}
+
+
+*form styles*/
+#msform {
+    text-align: center;
+    margin-top: 30px;
+    width: clamp(600px, 70%, 600px);
+    height: 100%;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*inputs*/
+#msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+#msform input:focus, #msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ee0979;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #ee0979;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #C5C5F1;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover, #msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+/*headings*/
+.fs-title {
+    /* display: flex; */
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fs-subtitle {
+    /* display: flex; */
+    font-weight: normal;
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+

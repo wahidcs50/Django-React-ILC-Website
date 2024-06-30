@@ -1,0 +1,83 @@
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.notifications-row {
+  display: flex;
+  justify-content: center;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.notification-title {
+  color: blueviolet;
+}
+
+.notification-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.notification-details {
+  flex: 1;
+}
+
+.notification-heading {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #7575b7;
+}
+
+.notification-description {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.notification-time {
+  font-size: 14px;
+  color: #888;
+}
+
+.view-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.see-all-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}

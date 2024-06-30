@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Software Engineer",
+    "description": "We are seeking a highly skilled software engineer to join our team.",
+    "location": "New York",
+    "salary": "$80,000 - $100,000 per year"
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist",
+    "description": "We are looking for a talented data scientist to analyze large datasets and provide insights.",
+    "location": "San Francisco",
+    "salary": "$90,000 - $120,000 per year"
+  },
+  {
+    "id": 3,
+    "title": "UX/UI Designer",
+    "description": "We are hiring a creative UX/UI designer to enhance our product's user experience.",
+    "location": "Seattle",
+    "salary": "$70,000 - $90,000 per year"
+  }
+]

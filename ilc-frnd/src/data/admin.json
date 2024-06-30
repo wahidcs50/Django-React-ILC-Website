@@ -1,0 +1,19 @@
+{
+    "students": [
+      { "id": 1, "name": "John Doe", "email": "john@example.com" },
+      { "id": 2, "name": "Jane Doe", "email": "jane@example.com" }
+    ],
+    "jobs": [
+      { "id": 1, "title": "Software Engineer", "description": "Develop software applications" },
+      { "id": 2, "title": "Data Analyst", "description": "Analyze and interpret data" }
+    ],
+    "internships": [
+      { "id": 1, "title": "Marketing Intern", "description": "Assist in marketing activities" },
+      { "id": 2, "title": "IT Intern", "description": "Support IT operations" }
+    ],
+    "events": [
+      { "id": 1, "title": "Tech Conference", "date": "2023-02-15", "status": "Upcoming" },
+      { "id": 2, "title": "Career Fair", "date": "2023-03-10", "status": "Upcoming" }
+    ]
+  }
+  

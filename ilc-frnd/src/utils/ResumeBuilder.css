@@ -1,0 +1,12 @@
+#resume-content {
+  padding: 20px;
+  background: white;
+}
+
+#resume-content h1, #resume-content h2 {
+  text-align: center;
+}
+
+#resume-content p {
+  margin: 0 0 10px;
+}
