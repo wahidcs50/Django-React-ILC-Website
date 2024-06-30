@@ -2,11 +2,11 @@
 
 # ILC Project
 
-This project contains the frontend and backend code for the ILC (Your Project Name) application.
+This project contains the frontend and backend code for the ILC-web application.
 
 ## Frontend (ILC-Frontend)
 
-The frontend is built using [React](https://reactjs.org/) and [Node.js](https://nodejs.org/). It interacts with the backend to provide a user-friendly interface for the ILC application.
+The frontend is built using [React](https://reactjs.org/). It interacts with the backend to provide a user-friendly interface for the ILC application.
 
 ### Installation
 
@@ -49,7 +49,7 @@ The backend provides the API and server-side logic for the ILC application. It i
 
 To run the backend server locally, use:
    ```sh
-   python app.py
+   python manage.py runserver
    ```
 
 The backend server will start and listen for requests.
@@ -59,12 +59,5 @@ The backend server will start and listen for requests.
 - Make sure to configure any environment variables or database connections as needed in both frontend and backend configurations.
 - Ensure both frontend and backend servers are running concurrently to use the ILC application seamlessly.
 
----
 
 
-
-- **Deployment Instructions**: How to deploy the application to a production server.
-- **Contributing**: Guidelines for contributing to the project.
-- **License**: Information about the project's license.
-
-Feel free to expand and customize this README file further to provide comprehensive documentation for your project.
